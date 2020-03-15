@@ -1,0 +1,23 @@
+.calculator {
+    width: 60%;
+    background-color: $color4;
+    text-align: start;
+    padding: 3%;
+    margin: auto;
+    form {
+        * {
+            margin: 2% 0;
+        }
+        .gender {
+            display: flex;
+            flex-direction: column;
+            label {
+                display: flex;
+                align-items: center;
+                input {
+                    margin-right: 4%;
+                }
+            }
+        }
+    }
+}

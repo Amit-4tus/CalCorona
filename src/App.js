@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './components/home';
+import Result from './components/results';
+import InvalidAge from './components/invalidAge';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className="app">
+        <Router>
+          <header>logo</header>
+          <Route exact path="/" render={() => <Home></Home>} />
+          <Route exact path="/results" render={() => <Result></Result>} />
+          <Route exact path="/invalid-age" render={() => <InvalidAge></InvalidAge>} />
+          <footer>
+            This site was created by Amit Fortus with the help of Roee Factor.
+            It is for fun only. Do not take any of it as medical advice. We are not responsible for any harmful outcome.
+            logo
+          </footer>
+        </Router>
+      </div>
+    );
+  }
 }
-
-export default App;
