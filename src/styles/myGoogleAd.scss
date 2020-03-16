@@ -1,0 +1,7 @@
+.myGoogleAd {
+    width: calc(40% - 5px);
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+    background-color: $color4;
+}

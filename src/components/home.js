@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Welcome from './welcome';
 import Calculator from './calculator';
+import GoogleAd from './googleAd'
 
 export default class Home extends Component {
     constructor(props) {
@@ -14,7 +15,10 @@ export default class Home extends Component {
         return (
             <div className="home section">
                 <Welcome></Welcome>
-                <Calculator></Calculator>
+                <section className="main">
+                    <Calculator></Calculator>
+                    <GoogleAd></GoogleAd>
+                </section>
             </div>
         )
     }

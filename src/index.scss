@@ -1,6 +1,8 @@
 @import 'styles/variables';
+@import 'styles/home';
 @import 'styles/welcome';
 @import 'styles/calculator';
+@import 'styles/myGoogleAd';
 
 * {
   box-sizing: border-box;
@@ -17,7 +19,16 @@ header {
 }
 
 .section {
-  width: 60vw;
+  width: 270px;
+  @media  (min-width: 550px) {
+    width: 450px;
+  }
+  @media  (min-width: 800px) {
+    width: 600px;
+  }
+  @media  (min-width: 1200px) {
+    width: 900px;
+  }
   margin: auto;
   text-align: center;
 }
