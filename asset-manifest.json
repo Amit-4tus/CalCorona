@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CalCorona/static/css/main.9d151e50.chunk.css",
+    "main.js": "/CalCorona/static/js/main.2ded479a.chunk.js",
+    "main.js.map": "/CalCorona/static/js/main.2ded479a.chunk.js.map",
+    "runtime-main.js": "/CalCorona/static/js/runtime-main.54cd95a7.js",
+    "runtime-main.js.map": "/CalCorona/static/js/runtime-main.54cd95a7.js.map",
+    "static/js/2.a0368e8b.chunk.js": "/CalCorona/static/js/2.a0368e8b.chunk.js",
+    "static/js/2.a0368e8b.chunk.js.map": "/CalCorona/static/js/2.a0368e8b.chunk.js.map",
+    "index.html": "/CalCorona/index.html",
+    "precache-manifest.9d6b5fcc693c38a8bcf934153f7df26d.js": "/CalCorona/precache-manifest.9d6b5fcc693c38a8bcf934153f7df26d.js",
+    "service-worker.js": "/CalCorona/service-worker.js",
+    "static/css/main.9d151e50.chunk.css.map": "/CalCorona/static/css/main.9d151e50.chunk.css.map",
+    "static/js/2.a0368e8b.chunk.js.LICENSE.txt": "/CalCorona/static/js/2.a0368e8b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54cd95a7.js",
+    "static/js/2.a0368e8b.chunk.js",
+    "static/css/main.9d151e50.chunk.css",
+    "static/js/main.2ded479a.chunk.js"
+  ]
+}
