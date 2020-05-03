@@ -1,26 +1,81 @@
 .calculator {
-    width: calc(60% - 5px);
-    @media (max-width: 550px) {
-        width: 100%;
-        margin-bottom: 10px;
+  width: calc(60% - 5px);
+  @media (max-width: 550px) {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10%;
+  }
+  text-align: start;
+  padding: 4%;
+  form {
+    * {
+      font-size: 0.9rem;
     }
-    background-color: $color4;
-    text-align: start;
-    padding: 3%;
-    form {
-        * {
-            margin: 2% 0;
-        }
-        .gender {
-            display: flex;
-            flex-direction: column;
-            label {
-                display: flex;
-                align-items: center;
-                input {
-                    margin-right: 4%;
-                }
-            }
-        }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: normal;
     }
+    h3 {
+      font-size: 0.9rem;
+      -webkit-text-stroke: black 0.5px;
+      margin: 5px 0;
+    }
+    #ageInput {
+      background-color: unset;
+      border: 1px solid lightgray;
+      border-bottom: 2px solid $color3 !important;
+      outline: none;
+      padding: 0% 2%;
+      margin: 10px 0;
+    }
+    #ageInput:focus {
+      padding: 2% 4%;
+      border: 1px solid gray;
+    }
+    .input-decoy {
+      width: 12px;
+      height: 12px;
+      border: 2.5px solid $color3;
+      display: block;
+      box-sizing: content-box;
+      position: relative;
+      top: 1.5px;
+      margin-right: 10px;
+    }
+    label:hover .input-decoy {
+      background-color: lightgray;
+    }
+    input:checked ~ .input-decoy {
+      background-color: $color3;
+      background-size: cover;
+    }
+    .gender {
+      display: flex;
+      label {
+        display: flex;
+        margin: 10px 0;
+        margin-right: 13%;
+        .gender-input-decoy {
+          border-radius: 999999px;
+        }
+        input:checked ~ .gender-input-decoy {
+          background-image: url("../assets/imgs/dot-icon.png");
+        }
+      }
+    }
+    .diseases-sect {
+      display: flex;
+      flex-direction: column;
+      label {
+        display: flex;
+        margin: 7px 0;
+        .disease-input-decoy {
+          border-radius: 4px;
+        }
+        input:checked ~ .disease-input-decoy {
+          background-image: url("../assets/imgs/v-icon.png");
+        }
+      }
+    }
+  }
 }

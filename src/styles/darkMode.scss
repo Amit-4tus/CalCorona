@@ -1,0 +1,60 @@
+body.dark::-webkit-scrollbar-track {
+  background-color: black;
+}
+body.dark::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#570000, #880a0a, #2b0000);
+}
+
+body.dark {
+  color: white;
+  background-color: black;
+  background-image: url(../assets/imgs/bgi-dark.png);
+  header {
+    background-color: black;
+    z-index: 1;
+    color: $dark1;
+    box-shadow: 0 0 9px 2px $dark1;
+    .mode-btn {
+      background-color: $dark1;
+      border-color: $dark1;
+      color: white;
+      padding: 0 0 0 13px;
+    }
+  }
+  .my-footer {
+    background-color: $dark2;
+  }
+  .muted {
+    background-color: $dark2;
+  }
+  .form-sect-header {
+    -webkit-text-stroke: white 0.5px;
+  }
+  #ageInput {
+    border-color: gray;
+    border-bottom: 2px solid $dark1 !important;
+    color: unset;
+  }
+  .input-decoy {
+    border-color: $dark1;
+  }
+  input:checked ~ .input-decoy {
+    background-color: $dark1;
+  }
+  label:hover .input-decoy {
+    background-color: gray;
+  }
+  .btn {
+    background-color: $dark1;
+    border-color: $dark3;
+    color: black;
+  }
+
+  .info-page {
+    background-color: black;
+    border-color: $dark1;
+    a {
+      color: $dark1;
+    }
+  }
+}

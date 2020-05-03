@@ -1,0 +1,28 @@
+.results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  .results-sect {
+    width: calc(60% - 5px);
+    padding: 10% 5%;
+    margin-bottom: 10px;
+    @media (max-width: 550px) {
+      width: 100%;
+      padding: 20% 5%;
+    }
+    .main-result {
+      margin-bottom: 10px;
+    }
+    .secondary-result {
+      font-weight: normal;
+    }
+  }
+  .result-for {
+    width: calc(60% - 5px);
+    padding: 15% 5%;
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.hide {
+  display: none;
+}
+
+.muted {
+  background-color: $color2;
+}
+
+.container {
+  width: 270px;
+  @media (min-width: 550px) {
+    width: 450px;
+  }
+  @media (min-width: 800px) {
+    width: 600px;
+  }
+  @media (min-width: 1200px) {
+    width: 900px;
+  }
+  margin: auto;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.btn {
+  background-color: $color1;
+  border: 3px solid $color2;
+  color: $color3;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 3% 6%;
+  margin-top: 4%;
+  outline: none;
+  cursor: pointer;
+}

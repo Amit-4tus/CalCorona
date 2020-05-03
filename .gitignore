@@ -11,6 +11,14 @@
 # production
 /build
 
+# firebase
+/.firebase
+/.firebaserc
+/firebase.json
+
+# googleAd script
+/googleAdScript.txt
+
 # misc
 .DS_Store
 .env.local
